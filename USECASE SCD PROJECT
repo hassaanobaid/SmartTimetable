@@ -1,0 +1,101 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="vlh9UTcXffjHOcGgQ9T3">
+    <mxGraphModel dx="3125" dy="1972" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2IsizZrp2pQU3OspispA-4" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Smart Timetable Generator" vertex="1">
+          <mxGeometry height="740" width="520" x="-1500" y="-1080" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-10" parent="2IsizZrp2pQU3OspispA-4" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="LOGIN" vertex="1">
+          <mxGeometry height="80" width="120" x="210" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-38" edge="1" parent="2IsizZrp2pQU3OspispA-4" source="2IsizZrp2pQU3OspispA-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="2IsizZrp2pQU3OspispA-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-39" connectable="0" parent="2IsizZrp2pQU3OspispA-38" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;INCLUDE&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0225" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-11" parent="2IsizZrp2pQU3OspispA-4" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="GENERATE TIMETABLE" vertex="1">
+          <mxGeometry height="80" width="120" x="90" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-12" parent="2IsizZrp2pQU3OspispA-4" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="CHECK AVAILABILITY" vertex="1">
+          <mxGeometry height="80" width="120" x="320" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-13" parent="2IsizZrp2pQU3OspispA-4" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="MANAGE USER ACCOUNTS" vertex="1">
+          <mxGeometry height="80" width="120" x="90" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-14" parent="2IsizZrp2pQU3OspispA-4" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="RESOLVE CLASHES" vertex="1">
+          <mxGeometry height="80" width="120" x="330" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-15" parent="2IsizZrp2pQU3OspispA-4" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="EXPORT TIMETABLE" vertex="1">
+          <mxGeometry height="80" width="120" x="80" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-16" parent="2IsizZrp2pQU3OspispA-4" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="VIEW TEACHER SCHEDULE" vertex="1">
+          <mxGeometry height="80" width="120" x="330" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-25" edge="1" parent="1" source="2IsizZrp2pQU3OspispA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2IsizZrp2pQU3OspispA-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1615" y="-990" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-26" edge="1" parent="1" source="2IsizZrp2pQU3OspispA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2IsizZrp2pQU3OspispA-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-34" edge="1" parent="1" source="2IsizZrp2pQU3OspispA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;curveGeometry=1;" target="2IsizZrp2pQU3OspispA-13">
+          <mxGeometry relative="1" x="-0.0027" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1615" y="-690" />
+              <mxPoint x="-1350" y="-690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-40" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="2IsizZrp2pQU3OspispA-15">
+          <mxGeometry relative="1" x="0.0889" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1620" y="-710" />
+              <mxPoint x="-1620" y="-480" />
+              <mxPoint x="-1420" y="-480" />
+            </Array>
+            <mxPoint x="-1610" y="-710" as="sourcePoint" />
+            <mxPoint x="-1370" y="-479.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="ADMIN" vertex="1">
+          <mxGeometry height="60" width="30" x="-1630" y="-770" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-29" edge="1" parent="1" source="2IsizZrp2pQU3OspispA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2IsizZrp2pQU3OspispA-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-885" y="-790" />
+              <mxPoint x="-1110" y="-790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-31" edge="1" parent="1" source="2IsizZrp2pQU3OspispA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2IsizZrp2pQU3OspispA-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-6" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Teacher&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="-899" y="-950" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Student&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="-899" y="-520" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-27" edge="1" parent="1" source="2IsizZrp2pQU3OspispA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.954;entryY=0.368;entryDx=0;entryDy=0;entryPerimeter=0;" target="2IsizZrp2pQU3OspispA-12">
+          <mxGeometry relative="1" x="0.0004" as="geometry" />
+        </mxCell>
+        <mxCell id="2IsizZrp2pQU3OspispA-36" edge="1" parent="1" source="2IsizZrp2pQU3OspispA-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.975;entryY=0.677;entryDx=0;entryDy=0;entryPerimeter=0;" target="2IsizZrp2pQU3OspispA-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-884" y="-720.8" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
