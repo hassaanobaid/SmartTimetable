@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teachers - Smart Timetable</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="shell"></div>
+  <script type="module">
+    import { crudPage } from './js/crud-page.js';
+    import { hhmm } from './js/ui.js';
+
+    crudPage({
+      active: 'teachers.html',
+      title: 'Teachers',
+      hint: 'Add every teacher who will be scheduled.',
+      endpoint: '/teachers',
+      columns: [
+        { key: 'name', label: 'Name' },
+        { key: 'email', label: 'Email' },
+        { key: 'department', label: 'Department' },
+      ],
+      fields: [
+        { name: 'name', label: 'Name', type: 'text', required: true, alpha: true },
+        { name: 'email', label: 'Email', type: 'email' },
+        { name: 'department', label: 'Department', type: 'text', alpha: true },
+      ],
+    });
+  </script>
+</body>
+</html>

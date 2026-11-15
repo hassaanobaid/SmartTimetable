@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register - Smart Timetable</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <form class="auth-card" id="form" novalidate style="max-width:460px;width:100%">
+    <h1>Create your account</h1>
+    <div id="server-err"></div>
+    <label><span>Full name</span>
+      <input name="full_name" placeholder="Hassaan Obaid" autocomplete="name">
+      <small class="field-error" id="err-full_name"></small></label>
+    <label><span>Email</span>
+      <input name="email" type="email" placeholder="name@gmail.com" autocomplete="email">
+      <small class="field-error" id="err-email"></small></label>
+    <label><span>I am a</span>
+      <select name="role">
+        <option value="student">Student (view only)</option>
+        <option value="teacher">Teacher (view only)</option>
+        <option value="admin">Admin (can manage everything)</option>
+      </select></label>
+    <label><span>Password</span>
+      <div class="pw">
+        <input name="password" type="password" autocomplete="new-password">
+        <button type="button" class="link-btn" id="toggle">Show</button>
+      </div>
+      <small class="field-error" id="err-password"></small></label>
+    <ul class="checklist" id="checklist"></ul>
+    <label><span>Confirm password</span>
+      <input name="confirm" type="password" autocomplete="new-password">
+      <small class="field-error" id="err-confirm"></small></label>
+    <button class="btn primary full" id="submit">Register</button>
+    <p class="center muted">Already registered? <a href="login.html">Log in</a></p>
+  </form>
+  <script type="module" src="js/register.js"></script>
+</body>
+</html>

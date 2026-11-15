@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in - Smart Timetable</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <div class="auth-wrap">
+    <section class="auth-hero">
+      <div>
+        <h1>A timetable with no clashes</h1>
+        <p>Teachers, rooms and sections are checked together, so nobody is double-booked.</p>
+      </div>
+      <div class="mini-week" id="mini" aria-hidden="true"></div>
+    </section>
+
+    <form class="auth-card" id="form" novalidate>
+      <h1>Log in</h1>
+      <div id="server-err"></div>
+      <label><span>Email</span>
+        <input name="email" type="email" placeholder="name@gmail.com" autocomplete="email">
+        <small class="field-error" id="err-email"></small></label>
+      <label><span>Password</span>
+        <div class="pw">
+          <input name="password" type="password" placeholder="Your password" autocomplete="current-password">
+          <button type="button" class="link-btn" id="toggle">Show</button>
+        </div>
+        <small class="field-error" id="err-password"></small></label>
+      <button class="btn primary full" id="submit">Log in</button>
+      <p class="center muted">No account yet? <a href="register.html">Register</a></p>
+    </form>
+  </div>
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>

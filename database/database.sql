@@ -77,6 +77,17 @@ CREATE TABLE IF NOT EXISTS timetable_entries (
   FOREIGN KEY (slot_id)   REFERENCES time_slots(id) ON DELETE CASCADE
 );
 
+-- Filled automatically by the Observer pattern (who did what)
+CREATE TABLE IF NOT EXISTS activity_log (
+  id         INT AUTO_INCREMENT PRIMARY KEY,
+  user_id    INT NULL,
+  user_name  VARCHAR(100) NULL,
+  action     VARCHAR(40)  NOT NULL,
+  entity     VARCHAR(40)  NOT NULL,
+  details    VARCHAR(255) NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
 -- Default time slots: Monday to Friday, 5 slots per day
 INSERT IGNORE INTO time_slots (day, start_time, end_time)
 SELECT d.dname, s.st, s.et

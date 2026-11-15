@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rooms - Smart Timetable</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="shell"></div>
+  <script type="module">
+    import { crudPage } from './js/crud-page.js';
+    import { hhmm } from './js/ui.js';
+
+    crudPage({
+      active: 'rooms.html',
+      title: 'Rooms',
+      hint: 'Classrooms and labs. Lab courses are placed only in lab rooms.',
+      endpoint: '/rooms',
+      columns: [
+        { key: 'name', label: 'Room' },
+        { key: 'capacity', label: 'Capacity' },
+        { key: 'is_lab', label: 'Type', render: (r) => (r.is_lab ? 'Lab' : 'Classroom') },
+      ],
+      fields: [
+        { name: 'name', label: 'Room name', type: 'text', required: true },
+        { name: 'capacity', label: 'Capacity', type: 'number', required: true, min: 1, max: 1000 },
+        { name: 'is_lab', label: 'This is a lab room', type: 'checkbox' },
+      ],
+    });
+  </script>
+</body>
+</html>

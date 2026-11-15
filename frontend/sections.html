@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sections - Smart Timetable</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="shell"></div>
+  <script type="module">
+    import { crudPage } from './js/crud-page.js';
+    import { hhmm } from './js/ui.js';
+
+    crudPage({
+      active: 'sections.html',
+      title: 'Sections',
+      hint: 'A section is a group of students that attends classes together, for example BSSE-5A.',
+      endpoint: '/sections',
+      columns: [
+        { key: 'name', label: 'Section' },
+        { key: 'size', label: 'Students' },
+      ],
+      fields: [
+        { name: 'name', label: 'Section name', type: 'text', required: true },
+        { name: 'size', label: 'Number of students', type: 'number', required: true, min: 1, max: 500 },
+      ],
+    });
+  </script>
+</body>
+</html>
